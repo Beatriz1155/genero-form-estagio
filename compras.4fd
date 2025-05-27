@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31501" name="managedform" uid="{6a0a462d-264f-432a-89a7-a4812c501a66}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="record1" uid="{4a24fb8f-b48f-42d4-90b2-f681f2c9f68a}">
+    <RecordField fieldIdRef="1" name="label_cod_comp" uid="{e559a0e4-1dca-49f9-ba24-8877a54424ba}"/>
+    <RecordField fieldIdRef="3" name="label_ano_comp" uid="{8be56618-eb7c-4293-85e9-c0e83eda2b0e}"/>
+    <RecordField fieldIdRef="2" length="80" name="cod_comp" uid="{f4793e51-0a24-4497-ac19-afff8294b783}"/>
+    <RecordField fieldIdRef="5" name="label_num_comp" uid="{ed859ebb-8908-4749-8be9-7fcf7e76b1ae}"/>
+    <RecordField fieldIdRef="7" name="label_data_comp" uid="{89995926-8eab-4afe-8228-e1cc7efe9d4c}"/>
+    <RecordField fieldIdRef="6" length="80" name="num_comp" sqlType="INTEGER" uid="{9a9f24e3-0613-4e66-b24a-13d00995c181}"/>
+    <RecordField fieldIdRef="8" name="label_cod_forn_comp" uid="{b25e68ab-d857-4b2e-a76a-89771477a071}"/>
+    <RecordField fieldIdRef="10" length="80" name="cod_forn" uid="{9451a456-c802-47a3-a93e-9b48cdb9043a}"/>
+    <RecordField fieldIdRef="11" length="80" name="ano_comp" uid="{65173755-e6ac-45e0-9723-7a843c25fbad}"/>
+    <RecordField fieldIdRef="4" length="80" name="nome_forn" uid="{bfd49bf9-e224-4950-8606-521a8eb99391}"/>
+    <RecordField fieldIdRef="12" length="80" name="add_forn" uid="{31ab0e2c-e9fa-4090-bd0d-2a6651e13208}"/>
+    <RecordField fieldIdRef="13" length="80" name="loc_forn" uid="{7fbb2d81-5b49-47f5-80f5-65a36d5be93c}"/>
+    <RecordField fieldIdRef="14" name="data_comp" sqlType="DATE" uid="{09055256-ee63-4237-b402-01d8c0d26d97}"/>
+  </Record>
+  <Record name="sr_compra_l" uid="{687ce06f-de1c-47f3-8b24-8093e016c934}">
+    <RecordField fieldIdRef="9" name="sr_compra_l.cod_artigo" uid="{73dacf88-5d6c-437c-bc9b-c713226ea164}"/>
+    <RecordField fieldIdRef="15" name="cod_armazem" uid="{618e6b9a-e163-41e7-8496-42c69636d19f}"/>
+    <RecordField fieldIdRef="16" name="quantidade" uid="{e56c5668-b9c1-4c6a-89c0-30168d684748}"/>
+    <RecordField fieldIdRef="17" name="preco_unitario" uid="{3810ba43-4590-4fbc-9fc6-eec673e39dcd}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="83" image="fa-shopping-cart" name="form" text="Compras">
+    <Grid gridHeight="19" gridWidth="62" name="gr_compra" posX="2" posY="1">
+      <FFLabel fieldId="1" gridHeight="1" gridWidth="10" name="label_cod_comp" posX="3" posY="1" title="fflabel1" widget="FFLabel"/>
+      <Edit case="upper" fieldId="2" gridHeight="1" gridWidth="16" length="80" name="cod_comp" notNull="true" posX="15" posY="1" required="true" tabIndex="-1" title="edit1" widget="Edit"/>
+      <FFLabel fieldId="7" gridHeight="1" gridWidth="10" name="label_data_comp" posX="33" posY="1" title="fflabel1" widget="FFLabel"/>
+      <DateEdit fieldId="14" gridHeight="1" gridWidth="14" name="data_comp" posX="45" posY="1" sqlType="DATE" tabIndex="-1" title="edit1" widget="DateEdit"/>
+      <FFLabel fieldId="3" gridHeight="1" gridWidth="10" name="label_ano_comp" posX="3" posY="3" title="fflabel1" widget="FFLabel"/>
+      <Edit case="upper" fieldId="11" gridHeight="1" gridWidth="11" length="80" name="ano_comp" noEntry="true" notNull="true" posX="15" posY="3" required="true" tabIndex="-1" title="edit1" widget="Edit"/>
+      <FFLabel fieldId="5" gridHeight="1" gridWidth="10" name="label_num_comp" posX="28" posY="3" title="fflabel1" widget="FFLabel"/>
+      <Edit case="upper" fieldId="6" gridHeight="1" gridWidth="19" length="80" name="num_comp" notNull="true" posX="40" posY="3" required="true" sqlType="INTEGER" tabIndex="-1" title="edit1" widget="Edit"/>
+      <FFLabel fieldId="8" gridHeight="1" gridWidth="11" name="label_cod_forn_comp" posX="3" posY="5" title="fflabel1" widget="FFLabel"/>
+      <Edit case="upper" fieldId="10" gridHeight="1" gridWidth="11" length="80" name="cod_forn" noEntry="false" notNull="false" posX="15" posY="5" required="true" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Edit case="upper" fieldId="4" gridHeight="1" gridWidth="12" length="80" name="nome_forn" noEntry="true" notNull="false" posX="28" posY="5" required="true" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Edit case="upper" fieldId="12" gridHeight="1" gridWidth="18" length="80" name="add_forn" noEntry="true" notNull="false" posX="41" posY="5" required="true" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Edit case="upper" fieldId="13" gridHeight="1" gridWidth="44" length="80" name="loc_forn" noEntry="true" notNull="false" posX="15" posY="7" required="true" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Table gridHeight="7" gridWidth="48" name="sr_compra_l" posX="3" posY="9" totalRows="5">
+        <Edit fieldId="9" gridHeight="1" gridWidth="10" name="sr_compra_l.cod_artigo" posX="0" posY="0" tabIndex="-1" title="Código Artigos" widget="Edit"/>
+        <Edit fieldId="15" gridHeight="1" gridWidth="13" name="cod_armazem" posX="10" posY="0" tabIndex="-1" title="Código Armazéns" widget="Edit"/>
+        <Edit fieldId="16" gridHeight="1" gridWidth="9" name="quantidade" posX="23" posY="0" tabIndex="-1" title="Quantidade" widget="Edit"/>
+        <Edit fieldId="17" gridHeight="1" gridWidth="11" name="preco_unitario" posX="32" posY="0" tabIndex="-1" title="Preço Unitário" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA0AGEAMgA0AGYAYgA4AGYALQBiADQAOABmAC0ANAAyAGQANAAtADkAMABiADIALQBmADYAOAAxAGYAMgBjADkAZgA2ADgAYQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEwAewA2ADgANwBjAGUAMAA2AGYALQBkAGUAMQBjAC0ANAA3AGYAMwAtADgAYgAyADQALQA4ADAAOQAzAGUAMAAxADYAYwA5ADMANAB9QGmzM0AMzM5AS5mZp2ZmaD9QYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>
